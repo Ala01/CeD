@@ -23,7 +23,7 @@ class SignUp extends Component {
         this.props.history.push("/");
       } catch (err) {
         console.log(err);
-        this.setState({ error: "Ocorreu um erro ao registrar sua conta. T.T" });
+        this.setState({ error: "Ocorreu um erro ao registrar sua conta." });
       }
     }
   };
@@ -49,9 +49,9 @@ class SignUp extends Component {
             placeholder="Senha"
             onChange={e => this.setState({ password: e.target.value })}
           />
-          <button type="submit">Cadastrar grátis</button>
+          <button type="submit">Cadastrar</button>
           <hr />
-          <Link to="/">Fazer login</Link>
+          <Link to="/signin">Fazer login</Link>
         </Form>
       </Container>
     );

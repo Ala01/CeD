@@ -25,7 +25,7 @@ class SignIn extends Component {
       } catch (err) {
         this.setState({
           error:
-            "Houve um problema com o login, verifique suas credenciais. T.T"
+            "Houve um problema com o login, verifique suas credenciais."
         });
       }
     }
@@ -49,7 +49,7 @@ class SignIn extends Component {
           />
           <button type="submit">Entrar</button>
           <hr />
-          <Link to="/signup">Criar conta grátis</Link>
+          <Link to="/signup">Criar conta</Link>
         </Form>
       </Container>
     );
